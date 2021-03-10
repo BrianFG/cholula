@@ -11,20 +11,36 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 .mySlides {display:none}
 .w3-tag, .fa {cursor:pointer}
 .w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+}
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 </style>
 <body>
 
 <!-- Links (sit on top) -->
 <div class="w3-top">
-  <div class="w3-row w3-large w3-light-grey">
+  <div class="w3-row w3-large w3-blue-gray">
     <div class="w3-col s4">
-      <a href="#plans" class="w3-button w3-block">Conóceme</a>
+      <a href="https://pacofraile.com/conoceme/" class="w3-button w3-block">Conóceme</a>
     </div>
     <div class="w3-col s4">
-      <a href="#about" class="w3-button w3-block">Propuestas</a>
+      <a href="https://pacofraile.com/" class="w3-button w3-block">Propuestas</a>
     </div>
     <div class="w3-col s4">
-      <a href="#contact" class="w3-button w3-block">Contacto</a>
+      <a href="https://pacofraile.com/contacto/" class="w3-button w3-block">Contacto</a>
     </div>
   </div>
 </div>
@@ -55,7 +71,7 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
     </div>
 
     <!-- Slideshow next/previous buttons -->
-    <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+    <div class="w3-container w3-blue-gray w3-padding w3-xlarge">
       <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
       <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
     
@@ -70,10 +86,12 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
   <!-- Grid -->
 
   <!-- Grid -->
-  <div class="w3-row-padding" id="plans">
-    <div class="w3-center w3-padding-64">
+  <div class="w3-container">
+    <div class='w3-center'>
       <h3>Platiquemos</h3>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc2dbSP-dGI4hA9inFxscbgmd4TblgMnoxTK-SMfJkweTmSSg/viewform?embedded=true" width="1200" height="700" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+    <div class="container">
+      <iframe class="responsive-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSc2dbSP-dGI4hA9inFxscbgmd4TblgMnoxTK-SMfJkweTmSSg/viewform?embedded=true">Cargando…</iframe>
+    </div>
     </div>
   </div>
 
@@ -87,14 +105,12 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
   <h4>Paco Fraile 2021</h4>
   <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>Subir</a>
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <a href="https://www.facebook.com/pacofrailegarcia"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/pacofrailegarcia/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/https://twitter.com/paco_fraile?s=21"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.youtube.com/channel/UCbg7n_pjmF4Qw6cjHVAMEsg"><i class="fa fa-youtube w3-hover-opacity"></i></a>
   </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p>Todos los derechos reservados</p>
 </footer>
 
 
